@@ -1,0 +1,22 @@
+<script>
+    //single level inheritance
+    class a{
+        myFunk1(){
+            console.log("a");
+        }
+    }
+    class b extends a{
+        myFunk2(){
+            console.log("b");
+        }
+        myFunk1(){
+            //super.myFunk1
+            console.log("class b my 1");
+        }
+    }
+
+    var rec = new b
+    console.log(rec);
+    rec.myFunk1();
+    rec.myFunk2();
+</script>
